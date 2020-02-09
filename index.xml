@@ -6,10 +6,44 @@
     <description>Recent content on Mycroft Xiao的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Sun, 09 Feb 2020 12:58:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 14:50:50 +0800</lastBuildDate>
     
 	<atom:link href="https://mycroftxiao.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>程序员的自我修养</title>
+      <link>https://mycroftxiao.github.io/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/</link>
+      <pubDate>Sun, 09 Feb 2020 14:50:50 +0800</pubDate>
+      
+      <guid>https://mycroftxiao.github.io/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/</guid>
+      <description>本文整理了学习过程中觉得很有用的内容，有好的内容欢迎大家分享交流
+常用网站  问题交流网站Stack Overflow
+  代码托管及开源网站Github
+ 一定要会的基础内容  正则表达式
+  编程规范_python简易
+ </description>
+    </item>
+    
+    <item>
+      <title>Python踩坑记录</title>
+      <link>https://mycroftxiao.github.io/python%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 09 Feb 2020 14:28:12 +0800</pubDate>
+      
+      <guid>https://mycroftxiao.github.io/python%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>本文是有关python的进阶内容整理，python的相关入门教程可以参见
+ Python教程 - 廖雪峰的官方网站
+  Python 基础教程|菜鸟教程
+  学习 Python 100 天系列文章代码
+ Python进阶内容 1.常用路径  缓存路径：C:\Users\username\AppData\Local\pip\cache
+ TODO:  2.编码与解码的补充 bytes的显示问题 我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）
+&amp;gt;&amp;gt;&amp;gt; &#39;1234567890&#39;.encode() b&#39;124567890&#39;  同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&amp;rsquo;1&#39;这里有就一点，bytes的输出显示中用‘\x’表示16进制码
+&amp;gt;&amp;gt;&amp;gt; b&#39;\x31&#39; == b&#39;1&#39; True  同时bytes在显示二进制码（16进制码）时候，会自动使用ascii解析二进制码，没有则会使用&amp;rsquo;\x&#39;打印16进制码
+&amp;gt;&amp;gt;&amp;gt; b&#39;\x31\x33\xff&#39; b&#39;13\xff&#39;  str与16进制 引用文章：【Python】bytes和hex字符串之间的相互转换
+在Python2.7.x上（更老的环境真心折腾不起），hex字符串和bytes之间的转换是这样的：
+&amp;gt;&amp;gt;&amp;gt; a = &#39;aabbccddeeff&#39; &amp;gt;&amp;gt;&amp;gt; a_bytes = a.decode(&#39;hex&#39;) &amp;gt;&amp;gt;&amp;gt; print(a_bytes) b&#39;\xaa\xbb\xcc\xdd\xee\xff&#39; &amp;gt;&amp;gt;&amp;gt; aa = a_bytes.encode(&#39;hex&#39;) &amp;gt;&amp;gt;&amp;gt; print(aa) aabbccddeeff &amp;gt;&amp;gt;&amp;gt;  在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。在python3.5之前，这个转换的其中一种方式是这样的：
+&amp;gt;&amp;gt;&amp;gt; a = &#39;aabbccddeeff&#39; &amp;gt;&amp;gt;&amp;gt; a_bytes = bytes.</description>
+    </item>
     
     <item>
       <title>Aboutme</title>
@@ -22,8 +56,8 @@
   19年开始自学python
  工作经历  17年4月在珠海保税区光联科技有限公司工作至今，担任模块测试工作
  联系方式  Github
-  微信 邮箱：xzl745@163.com
- 特别感谢  搭建本博客特别感谢Codesheep的入门指引
+  邮箱：xzl745@163.com
+  微信  特别感谢  搭建本博客特别感谢Codesheep的入门指引
  </description>
     </item>
     
