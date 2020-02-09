@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Site of Mycroft Xiao</title>
+    <title>Mycroft Xiao的个人博客</title>
     <link>https://mycroftxiao.github.io/</link>
-    <description>Recent content on Hugo Site of Mycroft Xiao</description>
+    <description>Recent content on Mycroft Xiao的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
     <lastBuildDate>Sun, 09 Feb 2020 12:58:42 +0800</lastBuildDate>
@@ -22,7 +22,8 @@
   19年开始自学python
  工作经历  17年4月在珠海保税区光联科技有限公司工作至今，担任模块测试工作
  联系方式  Github
-  微信  特别感谢  搭建本博客特别感谢Codesheep的入门指引
+  微信 邮箱：xzl745@163.com
+ 特别感谢  搭建本博客特别感谢Codesheep的入门指引
  </description>
     </item>
     
