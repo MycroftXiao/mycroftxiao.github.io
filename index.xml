@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Site of Mycroft Xiao</title>
+    <link>https://mycroftxiao.github.io/</link>
+    <description>Recent content on Hugo Site of Mycroft Xiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>utf-8</language>
+    <lastBuildDate>Sun, 09 Feb 2020 12:58:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://mycroftxiao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aboutme</title>
+      <link>https://mycroftxiao.github.io/aboutme/</link>
+      <pubDate>Sun, 09 Feb 2020 12:58:42 +0800</pubDate>
+      
+      <guid>https://mycroftxiao.github.io/aboutme/</guid>
+      <description>关于我 程序之路  从12年大一开始接触C语言，是谭老师的红色书。后来接触过嵌入式系统，
+  17年工作开始使用MFC编写调试工具
+  19年开始自学python
+ 工作经历  17年4月在珠海保税区光联科技有限公司工作至今，担任模块测试工作
+ 联系方式  Github
+  微信  特别感谢  搭建本博客特别感谢Codesheep的入门指引
+ </description>
+    </item>
+    
+  </channel>
+</rss>
