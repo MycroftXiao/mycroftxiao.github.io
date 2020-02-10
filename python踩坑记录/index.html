@@ -17,13 +17,16 @@
   Python 基础教程|菜鸟教程
   学习 Python 100 天系列文章代码
  Python进阶内容 1.常用路径  缓存路径：C:\Users\username\AppData\Local\pip\cache
- TODO:  2.编码与解码的补充 bytes的显示问题 我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）
-&gt;&gt;&gt; &#39;1234567890&#39;.encode() b&#39;124567890&#39;  同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1&#39;这里有就一点，bytes的输出显示中用‘\x’表示16进制码
+  默认安装路径：windows：C:\Users\username\AppData\Local\Programs\Python
+  包路径: 安装路径/Lib
+ 包路径里面会有一些教程和文件供参考
+2.编码与解码的补充 bytes的显示问题 我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）
+&gt;&gt;&gt; &#39;1234567890&#39;.encode() b&#39;124567890&#39;  同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1&rsquo;。
+这里有就一点，bytes的输出显示中用‘\x’表示16进制码
 &gt;&gt;&gt; b&#39;\x31&#39; == b&#39;1&#39; True  同时bytes在显示二进制码（16进制码）时候，会自动使用ascii解析二进制码，没有则会使用&rsquo;\x&#39;打印16进制码
-&gt;&gt;&gt; b&#39;\x31\x33\xff&#39; b&#39;13\xff&#39;  str与16进制 引用文章：【Python】bytes和hex字符串之间的相互转换
+&gt;&gt;&gt; b&#39;\x31\x33\xff&#39; b&#39;13\xff&#39;  3.进制转换 str与16进制互相转换 引用文章：【Python】bytes和hex字符串之间的相互转换
 在Python2.7.x上（更老的环境真心折腾不起），hex字符串和bytes之间的转换是这样的：
-&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = a.decode(&#39;hex&#39;) &gt;&gt;&gt; print(a_bytes) b&#39;\xaa\xbb\xcc\xdd\xee\xff&#39; &gt;&gt;&gt; aa = a_bytes.encode(&#39;hex&#39;) &gt;&gt;&gt; print(aa) aabbccddeeff &gt;&gt;&gt;  在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。在python3.5之前，这个转换的其中一种方式是这样的：
-&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = bytes."/>
+&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = a.decode(&#39;hex&#39;) &gt;&gt;&gt; print(a_bytes) b&#39;\xaa\xbb\xcc\xdd\xee\xff&#39; &gt;&gt;&gt; aa = a_bytes.encode(&#39;hex&#39;) &gt;&gt;&gt; print(aa) aabbccddeeff &gt;&gt;&gt;  在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。"/>
 
     <meta property="og:title" content="Python踩坑记录" />
 <meta property="og:description" content="本文是有关python的进阶内容整理，python的相关入门教程可以参见
@@ -31,17 +34,20 @@
   Python 基础教程|菜鸟教程
   学习 Python 100 天系列文章代码
  Python进阶内容 1.常用路径  缓存路径：C:\Users\username\AppData\Local\pip\cache
- TODO:  2.编码与解码的补充 bytes的显示问题 我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）
-&gt;&gt;&gt; &#39;1234567890&#39;.encode() b&#39;124567890&#39;  同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1&#39;这里有就一点，bytes的输出显示中用‘\x’表示16进制码
+  默认安装路径：windows：C:\Users\username\AppData\Local\Programs\Python
+  包路径: 安装路径/Lib
+ 包路径里面会有一些教程和文件供参考
+2.编码与解码的补充 bytes的显示问题 我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）
+&gt;&gt;&gt; &#39;1234567890&#39;.encode() b&#39;124567890&#39;  同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1&rsquo;。
+这里有就一点，bytes的输出显示中用‘\x’表示16进制码
 &gt;&gt;&gt; b&#39;\x31&#39; == b&#39;1&#39; True  同时bytes在显示二进制码（16进制码）时候，会自动使用ascii解析二进制码，没有则会使用&rsquo;\x&#39;打印16进制码
-&gt;&gt;&gt; b&#39;\x31\x33\xff&#39; b&#39;13\xff&#39;  str与16进制 引用文章：【Python】bytes和hex字符串之间的相互转换
+&gt;&gt;&gt; b&#39;\x31\x33\xff&#39; b&#39;13\xff&#39;  3.进制转换 str与16进制互相转换 引用文章：【Python】bytes和hex字符串之间的相互转换
 在Python2.7.x上（更老的环境真心折腾不起），hex字符串和bytes之间的转换是这样的：
-&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = a.decode(&#39;hex&#39;) &gt;&gt;&gt; print(a_bytes) b&#39;\xaa\xbb\xcc\xdd\xee\xff&#39; &gt;&gt;&gt; aa = a_bytes.encode(&#39;hex&#39;) &gt;&gt;&gt; print(aa) aabbccddeeff &gt;&gt;&gt;  在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。在python3.5之前，这个转换的其中一种方式是这样的：
-&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = bytes." />
+&gt;&gt;&gt; a = &#39;aabbccddeeff&#39; &gt;&gt;&gt; a_bytes = a.decode(&#39;hex&#39;) &gt;&gt;&gt; print(a_bytes) b&#39;\xaa\xbb\xcc\xdd\xee\xff&#39; &gt;&gt;&gt; aa = a_bytes.encode(&#39;hex&#39;) &gt;&gt;&gt; print(aa) aabbccddeeff &gt;&gt;&gt;  在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mycroftxiao.github.io/python%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" />
-<meta property="article:published_time" content="2020-02-09T14:28:12+08:00" />
-<meta property="article:modified_time" content="2020-02-09T14:28:12+08:00" />
+<meta property="article:published_time" content="2020-02-10T14:28:12+08:00" />
+<meta property="article:modified_time" content="2020-02-10T14:28:12+08:00" />
 
 
   </head>
@@ -75,7 +81,7 @@
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-          Feb 9, 2020
+          Feb 10, 2020
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
@@ -101,15 +107,20 @@
 <blockquote>
 <p>缓存路径：C:\Users\username\AppData\Local\pip\cache</p>
 </blockquote>
-<pre><code>TODO:
-</code></pre>
+<blockquote>
+<p>默认安装路径：windows：C:\Users\username\AppData\Local\Programs\Python</p>
+</blockquote>
+<blockquote>
+<p>包路径: 安装路径/Lib</p>
+</blockquote>
+<p>包路径里面会有一些教程和文件供参考</p>
 <h2 id="2编码与解码的补充">2.编码与解码的补充</h2>
 <h3 id="bytes的显示问题">bytes的显示问题</h3>
 <p>我们都知道在python中使用decode进行解码（bytes转化为str），使用encode进行编码（str转bytes）</p>
 <pre><code>&gt;&gt;&gt; '1234567890'.encode()
 b'124567890'
 </code></pre>
-<p>同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1'<!-- raw HTML omitted -->
+<p>同时我们又知道‘1’的ascii码编码是0x31，而不是我们现在看到的b&rsquo;1&rsquo;。<br>
 这里有就一点，bytes的输出显示中用‘\x’表示16进制码</p>
 <pre><code>&gt;&gt;&gt; b'\x31' == b'1'
 True
@@ -118,7 +129,8 @@ True
 <pre><code>&gt;&gt;&gt; b'\x31\x33\xff'
 b'13\xff'
 </code></pre>
-<h3 id="str与16进制">str与16进制</h3>
+<h2 id="3进制转换">3.进制转换</h2>
+<h3 id="str与16进制互相转换">str与16进制互相转换</h3>
 <p>引用文章：<a href="https://www.cnblogs.com/japhasiac/p/7739846.html">【Python】bytes和hex字符串之间的相互转换</a></p>
 <p>在Python2.7.x上（更老的环境真心折腾不起），hex字符串和bytes之间的转换是这样的：</p>
 <pre><code>&gt;&gt;&gt; a = 'aabbccddeeff'
@@ -130,7 +142,7 @@ b'\xaa\xbb\xcc\xdd\xee\xff'
 aabbccddeeff
 &gt;&gt;&gt;
 </code></pre>
-<p>在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。<!-- raw HTML omitted -->
+<p>在python 3环境上，因为string和bytes的实现发生了重大的变化，这个转换也不能再用encode/decode完成了。<br>
 在python3.5之前，这个转换的其中一种方式是这样的：</p>
 <pre><code>&gt;&gt;&gt; a = 'aabbccddeeff'
 &gt;&gt;&gt; a_bytes = bytes.fromhex(a)
@@ -150,6 +162,28 @@ b'\xaa\xbb\xcc\xdd\xee\xff'
 &gt;&gt;&gt; print(aa)
 aabbccddeeff
 &gt;&gt;&gt;
+</code></pre>
+<h3 id="负数与补码转换">负数与补码转换</h3>
+<ul>
+<li>
+<p>有两种方式，一种是使用ctypes库，<br>
+ctypes里面提供了各种C中的数据类型的转换方式<br>
+ctypes官方资料 <a href="https://docs.python.org/2/library/ctypes.html">python2</a>
+<a href="https://docs.python.org/3/library/ctypes.html">python3</a></p>
+</li>
+<li>
+<p>另一种是直接计算<br>
+正数的补码是正数本身,负数的补码等于按位（二进制位）取反再加一。因此我们可以按位取反，但是太麻烦了。二进制的一位，位取反之后和它本身只和必然是1，所以n位之和必然是2^n-1。再去看负数补码的定义，负数的绝对值和补码之和肯定是2^n。</p>
+</li>
+</ul>
+<p><strong>所以我们就可以这么直接得到一个数的16位有符号数，而且是自动补齐的</strong></p>
+<pre><code>a可以进行16位数以内任意替换
+&gt;&gt;&gt; a = -1 
+&gt;&gt;&gt; hex(0x10000 + a)[-4:]
+'ffff'
+&gt;&gt;&gt; a = 10
+&gt;&gt;&gt; hex(0x10000 + a)[-4:]
+'000a'
 </code></pre>
 <h2 id="3可变对象于不可变对象">3.可变对象于不可变对象</h2>
 <p>参考文章：<a href="https://zhuanlan.zhihu.com/p/57893374?utm_source=ZHShareTargetIDMore&amp;utm_medium=social&amp;utm_oi=657675078091935744">5张图彻底理解Python中的浅拷贝与深拷贝_张小鸡_Python程序员</a></p>
